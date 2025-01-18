@@ -4,7 +4,7 @@ import { ElectronAPI } from "./types/electron.type";
 
 declare global {
   interface Window {
-    electron: ElectronAPI;
+    electronAPI: ElectronAPI;
   }
 }
 

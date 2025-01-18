@@ -5,7 +5,7 @@ const InputButton = () => {
 
   const handleClick = () => {
     console.log(inputValue);
-    window.electron.setTitle(inputValue);
+    window.electronAPI.setTitle(inputValue);
   };
 
   return (
