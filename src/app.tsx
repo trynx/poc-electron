@@ -1,4 +1,15 @@
 import { createRoot } from "react-dom/client";
+import App from "./components/App";
+import { ElectronAPI } from "./types/electron.type";
 
-const root = createRoot(document.body);
-root.render(<h2>Hello from Groot!</h2>);
+declare global {
+  interface Window {
+    electron: ElectronAPI;
+  }
+}
+
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  const root = createRoot(rootElement);
+  root.render(<App />);
+}
