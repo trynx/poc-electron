@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Greeting from "./Greeting";
 import InputButton from "./InputButton";
 import FileOpener from "./FileOpener";
+import Counter from "./Counter";
 
 const App = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const App = () => {
       <Greeting />
       <InputButton />
       <FileOpener />
+      <Counter />
     </div>
   );
 };
